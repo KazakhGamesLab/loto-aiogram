@@ -1,0 +1,25 @@
+[project]
+name = "muhanjanbattle-aiogram"
+version = "0.1.0"
+description = "Telegram bot for Muhanjan Battle"
+authors = [
+    {name = "mironovv",email = "1111111111aleksey46@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "muhanjanbattle-models @ file:///C:/Users/MIRON/Documents/GitProjects/MyhanjanBattle/muhanjanbattle-models"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+muhanjanbattle-models = {develop = true}
+
+[dependency-groups]
+dev = [
+    "hupper (>=1.12.1,<2.0.0)"
+]
